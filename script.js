@@ -78,6 +78,7 @@ const numberBtns = document.querySelectorAll("[data-number]");
 const operationBtns = document.querySelectorAll("[data-operation]");
 const deleteBtn = document.querySelector("[data-delete]");
 const equalsBtn = document.querySelector("[data-equals]");
+const eqlBtn = document.querySelector("[data-equal]");
 const allClearBtn = document.querySelector("[data-all-clear]");
 const pOperandEle = document.querySelector("[data-p-operand]");
 const cOperandEle = document.querySelector("[data-c-operand]");
@@ -105,7 +106,10 @@ equalsBtn.addEventListener("click", (e) => {
   calculator.compute();
   calculator.displayOperand();
 });
-
+eqlBtn.addEventListener("click", (e) => {
+  calculator.compute();
+  calculator.displayOperand();
+});
 allClearBtn.addEventListener("click", () => {
   calculator.clear();
   calculator.displayOperand();
