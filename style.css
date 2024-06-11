@@ -1,0 +1,15 @@
+* {
+  box-sizing: content-box;
+}
+body {
+  padding: 0;
+  margin: 10%;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+.container-fluid {
+  margin: 20px;
+  border: 2px solid #c0c0c0;
+  border-radius: 12px;
+}
